@@ -1,116 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>InputApp</title>
-    <base href="/" />
+  <title>InputApp</title>
 
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- angular -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.min.js"></script>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- angular -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.min.js"></script>
+  
+  <!-- bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- bootstrap -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- LEAFLET -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 
-    <!-- LEAFLET -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-    />
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <!-- JSON EDITOR -->
+  <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
 
-    <!-- JSON EDITOR -->
-    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+  <link rel="stylesheet" href="app/stylesheets/main.css"/>
+  
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="app/stylesheets/main.css" />
+  <!--script src="bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.js"></script-->
+  <!-- App scripts -->
+  <script src="app/app.js"></script>
+  <script src="app/map.js"></script>
+  <script src="app/init_editor.js"></script>
+  <script src="app/dataset_controller.js"></script>
+  <script src="app/page_loads.js"></script>
+  <script src="app/app_helpers.js"></script>
+  <script src="app/controller.js"></script>
 
-    <!-- Material Icons -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-
-    <!--script src="bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.js"></script-->
-    <!-- App scripts -->
-    <script src="app/app.js"></script>
-    <script src="app/map.js"></script>
-    <script src="app/init_editor.js"></script>
-    <script src="app/dataset_controller.js"></script>
-    <script src="app/page_loads.js"></script>
-    <script src="app/app_helpers.js"></script>
-    <script src="app/controller.js"></script>
-  </head>
-  <body ng-controller="MainCtrl as ctl">
-    <div class="spinner">
-      <div class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="text">Loading Data</div>
+</head>
+<body ng-controller="MainCtrl as ctl">
+  <div class="spinner">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+    <div class="text">Loading Data</div>
+  </div>
 
-    <ng-include src="'views/fragments/navbar.html'"></ng-include>
+  <ng-include src="'views/fragments/navbar.html'"></ng-include>
 
-    <div
-      ng-if="ctl.show_errors"
-      class="dataset_errors"
-      style="
-        position: absolute;
-        top: 0;
-        display: block;
-        z-index: 99999;
-        background: white;
-        width: 100%;
-        text-align: center;
-      "
-    >
-      <div
-        ng-if="ctl.dataset_errors.length > 0"
-        ng-click="ctl.show_errors = !ctl.show_errors"
-        class="btn btn-primary"
-      >
-        Hide errors
-      </div>
-      <div>Numero di errori: {{ctl.dataset_errors.length}}</div>
-      <ul class="list-group">
-        <li
-          class="list-group-item"
-          ng-repeat="errori in ctl.dataset_errors"
-          ng-click="ctl.openeditor(errori.birth_certificate.ck_id)"
-        >
-          <span>{{errori['Bridge Name']}}</span>
-          <span ng-if="!errori.birth_certificate.lat"> - MISSING LATITUDE</span>
-          <span ng-if="!errori.birth_certificate.lng">
-            - MISSING LONGITUDE</span
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="my_container">
-      <ng-view></ng-view>
-    </div>
-    <ng-include src="'views/fragments/modal_editor.html'"></ng-include>
-    <ng-include src="'views/fragments/bottom_menu.html'"></ng-include>
-  </body>
+  <div ng-if="ctl.show_errors" class="dataset_errors" style="
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 99999;
+    background: white;
+    width: 100%;
+    text-align: center;
+    ">
+    <div ng-if="ctl.dataset_errors.length > 0" ng-click="ctl.show_errors = !ctl.show_errors" class="btn btn-primary">Hide errors</div>
+    <div> Numero di errori: {{ctl.dataset_errors.length}} </div>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="errori in ctl.dataset_errors" ng-click="ctl.openeditor(errori.birth_certificate.ck_id)">
+        <span>{{errori['Bridge Name']}}</span>
+        <span ng-if="!errori.birth_certificate.lat"> - MISSING LATITUDE</span>
+        <span ng-if="!errori.birth_certificate.lng"> - MISSING LONGITUDE</span>
+      </li>
+    </ul>
+  </div>
+  <div class="my_container">
+    <ng-view></ng-view>
+  </div>
+  <ng-include src="'views/fragments/modal_editor.html'"></ng-include>
+  <ng-include src="'views/fragments/bottom_menu.html'"></ng-include>
+
+</body>
 </html>
