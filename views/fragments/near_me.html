@@ -1,9 +1,13 @@
 <div class="btn btn-primary" ng-click="ctl.goto('/index')">Hide nearest</div>
-	<div> Luoghi vicini: {{ctl.near_places.length}} </div>
-	<ul class="list-group">
-	  <li class="list-group-item" ng-repeat="near_item in ctl.near_places" 
-	  ng-click="ctl.openeditor(near_item.birth_certificate.ck_id)">
-	    <span> {{near_item.distance}} m -- {{near_item.birth_certificate.ck_id}}</span>
-	  </li>
-	</ul>
-</div>
+<div>Luoghi vicini: {{ctl.near_places.length}}</div>
+<ul class="list-group">
+  <li
+    class="list-group-item"
+    ng-repeat="near_item in ctl.near_places"
+    ng-click="ctl.openeditor(near_item.birth_certificate.ck_id)"
+  >
+    <span>
+      {{near_item.distance}} m -- {{near_item.birth_certificate.ck_id}}</span
+    >
+  </li>
+</ul>

@@ -1,17 +1,18 @@
-body, html {
-  font: 'Montserrat';
+body,
+html {
+  font: "Montserrat";
   margin: 0;
   -webkit-overflow-scrolling: unset;
 }
 
-.my_container{
+.my_container {
   width: 100%;
   padding-bottom: 48px;
 }
 
 /* widget container */
-.widget-container{
-  height: calc( 100% - 48px );
+.widget-container {
+  height: calc(100% - 48px);
   position: absolute;
   top: 0;
   left: 0;
@@ -19,20 +20,20 @@ body, html {
 }
 
 /* SPINNER */
-.spinner{
+.spinner {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6); 
+  background: rgba(0, 0, 0, 0.6);
   z-index: 999999;
 }
 
-div.spinner > div.text{
+div.spinner > div.text {
   position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
-  top:  calc( 56%);
+  top: calc(56%);
   font-size: 22px;
   color: white;
 }
@@ -42,8 +43,8 @@ div.spinner > div.text{
   position: relative;
   width: 64px;
   height: 64px;
-  left: calc( 50% - 32px);
-  top: calc( 50% - 32px);
+  left: calc(50% - 32px);
+  top: calc(50% - 32px);
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -124,25 +125,25 @@ div.spinner > div.text{
   }
 }
 /* contenitore del form */
-.form_container{
+.form_container {
   width: 90%;
   margin: 0 auto;
   margin-top: 100px;
 }
 
 /*MODALE */
-#map{
-    width: 100%;
-    height: calc(100% - 96px);
+#map {
+  width: 100%;
+  height: calc(100% - 96px);
 }
-.modal{
+.modal {
   position: absolute;
   background-color: white;
   width: 100%;
   max-height: 100%;
   overflow: scroll;
 }
-.my_circular_button{
+.my_circular_button {
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -152,20 +153,20 @@ div.spinner > div.text{
   text-align: center;
 }
 
-.green{
+.green {
   background-color: green;
 }
 
-.red{
+.red {
   background-color: red;
 }
 
-.info-window{
-  background-color: rgba(255,255,255,0.5);
+.info-window {
+  background-color: rgba(255, 255, 255, 0.5);
   font-size: 15px;
   font-weight: bold;
 }
-.custom-marker{
+.custom-marker {
   height: 12px;
   width: 12px;
   background-color: blue;
@@ -173,7 +174,7 @@ div.spinner > div.text{
   border-width: 1px;
   border-radius: 50%;
 }
-.add.button{
+.add.button {
   font-size: 34px;
   font-weight: bold;
   border-radius: 50%;
@@ -189,21 +190,21 @@ div.spinner > div.text{
 }
 
 .inputapp {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /*bottom_menu*/
-.bottom_menu{
-  text-align: center; 
+.bottom_menu {
+  text-align: center;
   line-height: 48px;
   overflow: hidden;
 }
 
-a.col{
+a.col {
   text-decoration: none;
-  border: 1px white solid; 
-  border-left: 0; 
-  border-top: 0; 
+  border: 1px white solid;
+  border-left: 0;
+  border-top: 0;
   border-bottom: 0;
 }
 
@@ -215,7 +216,7 @@ a.col i.material-icons {
   padding: 0;
 }
 
-.my_title_grid{
+.my_title_grid {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -230,7 +231,9 @@ a.col i.material-icons {
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 
@@ -244,8 +247,8 @@ a.col i.material-icons {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
   max-height: unset !important;
 }
 
@@ -270,7 +273,8 @@ a.col i.material-icons {
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content,
+#caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -278,13 +282,21 @@ a.col i.material-icons {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
@@ -306,31 +318,31 @@ a.col i.material-icons {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
 }
 
-  .collapsible {
-    background-color: Transparent;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-  }
-  
-  .collapsible:focus{
-       outline: none;
-  }
-  
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: #f1f1f1;
-  }
+.collapsible {
+  background-color: Transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.collapsible:focus {
+  outline: none;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+}

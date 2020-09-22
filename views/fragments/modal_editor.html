@@ -1,16 +1,52 @@
 <div class="modal" style="display: none;">
-  <div ng-if="ctl.image_open == false" class="" style="display: grid; grid-template-columns: 100px 1fr 100px; position: fixed; width: 100%;background: white;z-index: 9999; border: 1px solid black; border-top: unset; border-left: unset; border-right: unset; padding-top: 5px;">
+  <div
+    ng-if="ctl.image_open == false"
+    class=""
+    style="
+      display: grid;
+      grid-template-columns: 100px 1fr 100px;
+      position: fixed;
+      width: 100%;
+      background: white;
+      z-index: 9999;
+      border: 1px solid black;
+      border-top: unset;
+      border-left: unset;
+      border-right: unset;
+      padding-top: 5px;
+    "
+  >
     <div>
-      <div ng-if='!ctl.new_item' class="my_circular_button red" style="margin: 20px 120px;" ng-click="ctl.hideModal('.modal')">X</div>
-      <div ng-if='ctl.new_item' class="my_circular_button red" style="margin: 20px 120px;" ng-click="ctl.delete_temp_item('.modal')">X</div>
+      <div
+        ng-if="!ctl.new_item"
+        class="my_circular_button red"
+        style="margin: 20px 120px;"
+        ng-click="ctl.hideModal('.modal')"
+      >
+        X
+      </div>
+      <div
+        ng-if="ctl.new_item"
+        class="my_circular_button red"
+        style="margin: 20px 120px;"
+        ng-click="ctl.delete_temp_item('.modal')"
+      >
+        X
+      </div>
     </div>
     <span class="modal-title my_title_grid">
-      Editing element 
-      <br/> 
+      Editing element
+      <br />
       {{ctl.current_ckid}}
     </span>
     <div style="justify-self: end;">
-      <div class="my_circular_button green" style="margin: 20px 120px;" ng-click="ctl.saveData()">Y</div>
+      <div
+        class="my_circular_button green"
+        style="margin: 20px 120px;"
+        ng-click="ctl.saveData()"
+      >
+        Y
+      </div>
     </div>
   </div>
   <ng-include src="'/views/fragments/form_generator.html'"></ng-include>

@@ -1,21 +1,50 @@
-<div class="container" style="background: #1e88e5; color:white; height: 48px; max-width: unset !important; position: fixed; bottom: 0;">
+<div
+  class="container"
+  style="
+    background: #1e88e5;
+    color: white;
+    height: 48px;
+    max-width: unset !important;
+    position: fixed;
+    bottom: 0;
+  "
+>
   <div class="bottom_menu row">
-    <a class="col" ng-click="ctl.goto('/index')"><i class="material-icons">map</i></a>
-    <a target="_blank" rel="nofollow" href="http://data.cityknowledge.net/api/v1/dataset.csv?group_name={{ctl.config.group_name}}" class="col">
-    	<i class="material-icons">insert_drive_file</i>
+    <a class="col" ng-click="ctl.goto('/index')"
+      ><i class="material-icons">map</i></a
+    >
+    <a
+      target="_blank"
+      rel="nofollow"
+      href="http://data.cityknowledge.net/api/v1/dataset.csv?group_name={{ctl.config.group_name}}"
+      class="col"
+    >
+      <i class="material-icons">insert_drive_file</i>
     </a>
-    <a class="col" ng-click="ctl.show_errors = !ctl.show_errors"><i class="material-icons">warning</i></a>
-    <a class="col" ng-click="ctl.goto('/nearme',ctl.nearestPlaces)"><i class="material-icons">near_me</i></a>
-    <a class="col" ng-click="ctl.openeditor()"><i class="material-icons">add_location</i></a>
+    <a class="col" ng-click="ctl.show_errors = !ctl.show_errors"
+      ><i class="material-icons">warning</i></a
+    >
+    <a class="col" ng-click="ctl.goto('/nearme',ctl.nearestPlaces)"
+      ><i class="material-icons">near_me</i></a
+    >
+    <a class="col" ng-click="ctl.openeditor()"
+      ><i class="material-icons">add_location</i></a
+    >
   </div>
 </div>
 
 <script type="text/javascript">
-$(".bottom_menu.row .col").on("click",function(){
-  var _self= this;
-  $(this).css({background: "#fff", transition: "background-color 500ms ease-in"});
-  setTimeout(function(){
-    $(_self).css({background: "#1e88e5", transition: "background-color 500ms ease-out"});
-  },505);
-});
+  $(".bottom_menu.row .col").on("click", function () {
+    var _self = this;
+    $(this).css({
+      background: "#fff",
+      transition: "background-color 500ms ease-in",
+    });
+    setTimeout(function () {
+      $(_self).css({
+        background: "#1e88e5",
+        transition: "background-color 500ms ease-out",
+      });
+    }, 505);
+  });
 </script>
