@@ -1,0 +1,3410 @@
+{
+	"schema": {
+		"type": "object",
+		"title": "Bells 2019",
+		"properties": {
+			"birth_certificate": {
+				"lat": {
+					"html_type": "number"
+				},
+				"lng": {
+					"html_type": "number"
+				}
+			},
+			"Basic Information": {
+				"Tower Name": {
+					"html_type": "text"
+				},
+				"Tower Sestiere": {
+					"html_type": "select",
+					"options": [
+						"Burano", 
+						"Cannaregio", 
+						"Castello", 
+						"Dorsoduro", 
+						"Giudecca", 
+						"Lido", 
+						"Mazzorbo",
+						"Murano", 
+						"San Marco", 
+						"San Polo", 
+						"Sant'Erasmo", 
+						"Santa Croce"
+					]
+				},
+				"Tower Code": {
+					"html_type": "text"
+				},
+				"Date Visited": {
+					"html_type": "date"
+				},
+				"Church Name": {
+					"html_type": "text"
+				},
+				"Proprietor": {
+					"html_type": "text"
+				},
+				"Construction Year": {
+					"html_type": "number"
+				}
+			},
+			"Raw Data": {
+				"Exterior Info": {
+					"General": {
+						"Tower Height": {
+							"html_type": "number"
+						},
+						"Material": {
+							"html_type": "select",
+							"options": [
+								"brick",
+								"cement"
+							]
+						},
+						"Block Height (cm)": {
+							"html_type": "number"
+						},
+						"Block Width (cm)": {
+							"html_type": "number"
+						},
+						"Block Depth (cm)": {
+							"html_type": "number"
+						}
+					},
+					"Orientation and Inclination of Tower": {
+						"Front Orientation (Degrees)": {
+							"html_type": "number"
+						},
+						"Right Orientation (Degrees)": {
+							"html_type": "number"
+						},
+						"Back Orientation (Degrees)": {
+							"html_type": "number"
+						},
+						"Left Orientation (Degrees)": {
+							"html_type": "number"
+						},
+						"Inclination Rating": {
+							"html_type": "select",
+							"options": [
+								"0 (none)",
+								"1 (slight)",
+								"2 (serious)"
+							]
+						},
+						"Inclination Direction": {
+							"html_type": "select",
+							"options": [
+								"Front",
+								"Left",
+								"Back",
+								"Right"
+							]
+						},
+						"Inclination (Calculated)": {
+							"html_type": "number"
+						}
+					},
+					"Public Access": {
+						"Accessible to Public": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Accessible from Front": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Accessible from Right": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Accessible form Left": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Accessible form Back": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Exterior Door Front": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Exterior Door Right": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Exterior Door Left": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Exterior Door Back": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Exterior Door Height (cm)": {
+							"html_type": "number"
+						},
+						"Exterior Door Width (cm)": {
+							"html_type": "number"
+						}
+					},
+					"Base": {
+						"Visibility of Base": {
+							"Visibility from Front": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Front": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Right": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Right": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Left": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Left": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Back": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Back": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							}
+						},
+						"Exterior of Base Notes": {
+							"Exterior Front": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Right": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Left": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Back": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							}
+						},
+						"Base Building Connections": {
+							"Front Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Front Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							},
+							"Right Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Right Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							},
+							"Left Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Left Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							},
+							"Back Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Back Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							}
+						},
+						"Base Exterior Decorations": {
+							"Number of Plants from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)."
+							},
+							"Number of Plants from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)."
+							},
+							"Number of Plants from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)."
+							},
+							"Number of Art Pieces from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Exterior Inscriptions": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Total number of inscriptions on all sides."
+							},
+							"Inscription": {
+								"html_type": "text",
+								"description": "Original text of inscription."
+							},
+							"Inscription Legibility": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Legibility of Inscription 0 (worst) 4 (best)."
+							},
+							"Number of Exterior Decorations": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Exterior Decorations Descriptions": {
+								"html_type": "text",
+								"description": "Text descriptions of decorations."
+							},
+							"Rating of Decorations": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating of legibility and preservation of decorations - 0 (best) 4 (worst)."
+							}
+						},
+						"Base Defects": {
+							"Number of Cracks / Holes from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Back": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Tie Bands from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							}
+						},
+						"Base Restorations": {
+							"Visible Restorations from Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							}
+						}
+					},
+					"Shaft": {
+						"Visibility of Shaft": {
+							"Visibility from Front": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Front": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Right": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Right": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Left": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Left": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Back": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Back": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							}
+						},
+						"Shaft Exterior Notes": {
+							"Exterior Front": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Right": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Left": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Back": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							}
+						},
+						"Shaft Building Connections": {
+							"Front Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Front Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							},
+							"Right Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Right Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							},
+							"Left Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Left Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							},
+							"Back Connections": {
+								"html_type": "text",
+								"description": "Nearby Buildings attached to tower."
+							},
+							"Percentage Back Connected": {
+								"html_type": "number",
+								"description": "Percentage of each side attached to tower."
+							}
+						},
+						"Shaft Exterior Decorations": {
+							"Number of Plants from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Plants from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Plants from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Art Pieces from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Exterior Inscriptions": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Total number of inscriptions on all sides."
+							},
+							"Inscription": {
+								"html_type": "text",
+								"description": "Original text of inscription"
+							},
+							"Inscription Legibility": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Legibility of Inscription 0 (worst) 4 (best)"
+							},
+							"Number of Exterior Decorations": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Exterior Decorations Descriptions": {
+								"html_type": "text",
+								"description": "Text descriptions of decorations"
+							},
+							"Rating of Decorations": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (best) 4 (worst)"
+							}
+						},
+						"Shaft Defects": {
+							"Number of Cracks / Holes from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Back": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Tie Bands from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							}
+						},
+						"Shaft Restorations": {
+							"Visible Restorations from Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							}
+						}
+					},
+					"Belfry": {
+						"Visibility of Belfry": {
+							"Visibility from Front": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Front": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Right": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Right": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Left": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Left": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Back": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Back": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							}
+						},
+						"Belfry Exterior Notes": {
+							"Exterior Front": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Right": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Left": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Back": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							}
+						},
+						"Belfry Exterior Decorations": {
+							"Number of Plants from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Plants from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Plants from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Art Pieces from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Exterior Inscriptions": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Total number of inscriptions on all sides."
+							},
+							"Inscription": {
+								"html_type": "text",
+								"description": "Original text of inscription"
+							},
+							"Inscription Legibility": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Legibility of Inscription 0 (worst) 4 (best)"
+							},
+							"Number of Exterior Decorations": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Exterior Decorations Descriptions": {
+								"html_type": "text",
+								"description": "Text descriptions of decorations"
+							},
+							"Rating of Decorations": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (best) 4 (worst)"
+							}
+						},
+						"Belfry Defects": {
+							"Number of Cracks / Holes from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Back": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Tie Bands from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							}
+						},
+						"Belfry Restorations": {
+							"Visible Restorations from Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							}
+						},
+						"Belfry Specifics": {
+							"Number of Lesene": {
+								"html_type": "number",
+								"description": "Number of narrow vertical pillars in a wall like a pilaster."
+							},
+							"Belfry Sections": {
+								"html_type": "number",
+								"description": "Number of sections to the belfry."
+							},
+							"Number of Arches in Belfry from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of arches on each side of belfry."
+							},
+							"Number of Arches in Belfry from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of arches on each side of belfry."
+							},
+							"Number of Arches in Belfry from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of arches on each side of belfry."
+							},
+							"Number of Arches in Belfry from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of arches on each side of belfry."
+							},
+							"Belfry Style": {
+								"html_type": "text",
+								"description": "Description of style of Belfry."
+							}
+						}
+					},
+					"Roof": {
+						"Visibility of Roof": {
+							"Visibility from Front": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Front": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Right": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Right": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Left": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Left": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							},
+							"Visibility from Back": {
+								"html_type": "number",
+								"description": "Percentage of each side of tower that is visible from the outside."
+							},
+							"Visibility Distance from Back": {
+								"html_type": "number",
+								"description": "Distance Visible Percentage was observed from."
+							}
+						},
+						"Roof Exterior Notes": {
+							"Exterior Front": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Right": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Left": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							},
+							"Exterior Back": {
+								"html_type": "text",
+								"description": "Any important notes on side of tower."
+							}
+						},
+						"Roof Exterior Decorations": {
+							"Number of Plants from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Plants from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Plants from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Quantity of Plants 0 (none) to 4 (countless)"
+							},
+							"Number of Art Pieces from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Art Pieces from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Pieces of Artwork."
+							},
+							"Number of Exterior Inscriptions": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Total number of inscriptions on all sides."
+							},
+							"Inscription": {
+								"html_type": "text",
+								"description": "Original text of inscription"
+							},
+							"Inscription Legibility": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Legibility of Inscription 0 (worst) 4 (best)"
+							},
+							"Number of Exterior Decorations": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Exterior Decorations Descriptions": {
+								"html_type": "text",
+								"description": "Text descriptions of decorations"
+							},
+							"Rating of Decorations": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (best) 4 (worst)"
+							}
+						},
+						"Roof Defects": {
+							"Number of Cracks / Holes from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Cracks / Holes from Back": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Front": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Right": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Colors of Bricks from Left": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "0 (none) 4 (countless)"
+							},
+							"Number of Tie Bands from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							},
+							"Number of Tie Bands from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the tower together"
+							}
+						},
+						"Restorations": {
+							"Visible Restorations from Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored shingles."
+							},
+							"Visible Restorations from Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored shingles."
+							},
+							"Visible Restorations from Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored shingles."
+							},
+							"Visible Restorations from Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored shingles."
+							}
+						},
+						"Drum Type": {
+							"html_type": "text",
+							"description": "Shape of drum above Belfry"
+						},
+						"Attic": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Cross": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Weathervane": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Lightening Rod": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Lightening Rod Grounded": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No",
+								"Unclear"
+							],
+							"description": "Is the lightening rod grounded?"
+						},
+						"Finial": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Finial Type": {
+							"html_type": "text"
+						},
+						"Finial Description": {
+							"html_type": "text"
+						}
+					},
+					"Clock": {
+						"Presence of a Clock": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							]
+						},
+						"Clock Functionality": {
+							"html_type": "select",
+							"options": [
+								"Yes",
+								"No"
+							],
+							"description": "Does the clock have any functionality?"
+						},
+						"Clock Mechanism Landing": {
+							"html_type": "number",
+							"description": "Landing of the clock mechanism."
+						}
+					}
+				},
+				"Interior Info": {
+					"General": {
+						"Door Side": {
+							"html_type": "select",
+							"options": [
+								"Front",
+								"Right",
+								"Left",
+								"Back"
+							],
+							"description": "Side door entering Bell tower is on."
+						},
+						"Door Height (cm)": {
+							"html_type": "number"
+						},
+						"Door Width (cm)": {
+							"html_type": "number"
+						},
+						"Number of Landings": {
+							"html_type": "number",
+							"step": "1"
+						},
+						"Clock Mechanism Landing": {
+							"html_type": "number",
+							"description": "Landing for clock mechanism."
+						}
+					},
+					"Ground Floor": {
+						"Landing Info": {
+							"Landing Material": {
+								"html_type": "select",
+								"options": [
+									"Wood",
+									"Brick",
+									"Stone",
+									"Metal"
+								]
+							},
+							"Landing Sturdiness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for sturdiness of landing - 0 (solid) 4 (dangerous)"
+							},
+							"Landing Cleanliness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for cleanliness of landing - 0 (clean) 4 (dirty)"
+							},
+							"Landing Length (cm)": {
+								"html_type": "number",
+								"description": "Distance Front to Back"
+							},
+							"Landing Width (cm)": {
+								"html_type": "number",
+								"description": "Distance Right to Left"
+							},
+							"Landing Height (cm)": {
+								"html_type": "number"
+							},
+							"Natural Light": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for amount of natural light of landing - 0 (lots of light) 4 (no light)"
+							},
+							"Artificial Light": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for amount of artificial light of landing - 0 (lots of light) 4 (no light)"
+							},
+							"Notes": {
+								"html_type": "text",
+								"description": "Any additional information"
+							}
+						},
+						"Stairs Info": {
+							"Presence of Ramp": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								]
+							},
+							"Presence of Stairs": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								]
+							},
+							"Staircase Side": {
+								"html_type": "select",
+								"options": [
+									"Front",
+									"Right",
+									"Left",
+									"Back"
+								]
+							},
+							"Stair Height": {
+								"html_type": "number"
+							},
+							"Staircase Material": {
+								"html_type": "select",
+								"options": [
+									"Wood",
+									"Brick",
+									"Stone",
+									"Metal"
+								]
+							},
+							"Number of Steps to Next Landing": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Bad Steps": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of steps that are damaged or dangerous"
+							},
+							"Staircase Cleanliness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for cleanliness of staircase - 0 (clean) 4 (dirty)"
+							},
+							"Staircase Sturdiness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for sturdiness of staircase - 0 (sturdy) 4 (dangerous)"
+							},
+							"Railing Sturdiness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for sturdiness of railings - 0 (sturdy) 4 (dangerous)"
+							},
+							"Notes": {
+								"html_type": "text",
+								"description": "Any additional information"
+							}
+						},
+						"Wall and Window Information": {
+							"Block Width (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of block in wall"
+							},
+							"Block Depth (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of block in wall"
+							},
+							"Block Height (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of block in wall"
+							},
+							"Wall Material": {
+								"html_type": "select",
+								"options": [
+									"Wood",
+									"Brick",
+									"Stone",
+									"Metal"
+								]
+							},
+							"Wall Thickness (cm)": {
+								"html_type": "number",
+								"description": "Thickness of wall"
+							},
+							"Number of Windows in Front": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Windows in Right": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Windows in Left": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Windows in Back": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Window Width (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of Window"
+							},
+							"Window Depth (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of Window"
+							},
+							"Window Height (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of Window"
+							}
+						},
+						"Doors Information": {
+							"Interior Door on Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Front side of the Tower"
+							},
+							"Interior Door on Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Right side of the Tower"
+							},
+							"Interior Door on Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Left side of the Tower"
+							},
+							"Interior Door on Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Back side of the Tower"
+							},
+							"Door Length (cm)": {
+								"html_type": "number"
+							},
+							"Door Width (cm)": {
+								"html_type": "number"
+							},
+							"Door Height (cm)": {
+								"html_type": "number"
+							},
+							"Notes": {
+								"html_type": "text",
+								"description": "Any additional information"
+							}
+						},
+						"Wall Restorations": {
+							"Visible Restorations from Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							}
+						},
+						"Wall Defects": {
+							"Number of Cracks / Holes in Front wall": {
+								"html_type": "number"
+							},
+							"Length of Longest Crack in Front wall": {
+								"html_type": "number"
+							},
+							"Number of Cracks / Holes in Right wall": {
+								"html_type": "number"
+							},
+							"Length of Longest Crack in Right wall": {
+								"html_type": "number"
+							},
+							"Number of Cracks / Holes in Left wall": {
+								"html_type": "number"
+							},
+							"Length of Longest Crack in Left wall": {
+								"html_type": "number"
+							},
+							"Number of Cracks / Holes in Back wall": {
+								"html_type": "number"
+							},
+							"Length of Longest Crack in Back wall": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Front": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Right": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Left": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Back": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Front": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Right": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Left": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Back": {
+								"html_type": "number"
+							},
+							"Number of Tie Bands from Front": {
+								"html_type": "number",
+								"description": "Number of Metal fastenings holding the wall together"
+							},
+							"Number of Tie Bands from Right": {
+								"html_type": "number",
+								"description": "Number of Metal fastenings holding the wall together"
+							},
+							"Number of Tie Bands from Left": {
+								"html_type": "number",
+								"description": "Number of Metal fastenings holding the wall together"
+							},
+							"Number of Tie Bands from Back": {
+								"html_type": "number",
+								"description": "Number of Metal fastenings holding the wall together"
+							}
+						}
+					},
+					"Landings": [
+						{
+							"Landing Number": {
+								"html_type": "number"
+							},
+							"Landing Info": {
+								"Landing Material": {
+									"html_type": "select",
+									"options": [
+										"Wood",
+										"Brick",
+										"Stone",
+										"Metal"
+									]
+								},
+								"Landing Sturdiness": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for sturdiness of landing - 0 (solid) 4 (dangerous)"
+								},
+								"Landing Cleanliness": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for cleanliness of landing - 0 (clean) 4 (dirty)"
+								},
+								"Landing Length (cm)": {
+									"html_type": "number",
+									"description": "Distance Front to Back"
+								},
+								"Landing Width (cm)": {
+									"html_type": "number",
+									"description": "Distance Right to Left"
+								},
+								"Landing Height (cm)": {
+									"html_type": "number"
+								},
+								"Natural Light": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for amount of natural light of landing - 0 (lots of light) 4 (no light)"
+								},
+								"Artificial Light": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for amount of artificial light of landing - 0 (lots of light) 4 (no light)"
+								},
+								"Notes": {
+									"html_type": "text",
+									"description": "Any additional information"
+								}
+							},
+							"Stairs Info": {
+								"Presence of Ramp": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									]
+								},
+								"Presence of Stairs": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									]
+								},
+								"Staircase Side": {
+									"html_type": "select",
+									"options": [
+										"Front",
+										"Right",
+										"Left",
+										"Back"
+									]
+								},
+								"Stair Height": {
+									"html_type": "number"
+								},
+								"Staircase Material": {
+									"html_type": "select",
+									"options": [
+										"Wood",
+										"Brick",
+										"Stone",
+										"Metal"
+									]
+								},
+								"Number of Steps to Next Landing": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Number of Bad Steps": {
+									"html_type": "number",
+									"step": "1",
+									"description": "Number of steps that are damaged or dangerous"
+								},
+								"Staircase Cleanliness": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for cleanliness of staircase - 0 (clean) 4 (dirty)"
+								},
+								"Staircase Sturdiness": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for sturdiness of staircase - 0 (sturdy) 4 (dangerous)"
+								},
+								"Railing Sturdiness": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for sturdiness of railings - 0 (sturdy) 4 (dangerous)"
+								},
+								"Notes": {
+									"html_type": "text",
+									"description": "Any additional information"
+								}
+							},
+							"Wall and Window Information": {
+								"Block Width (cm)": {
+									"html_type": "number",
+									"description": "Dimmensions of block in wall"
+								},
+								"Block Depth (cm)": {
+									"html_type": "number",
+									"description": "Dimmensions of block in wall"
+								},
+								"Block Height (cm)": {
+									"html_type": "number",
+									"description": "Dimmensions of block in wall"
+								},
+								"Wall Material": {
+									"html_type": "select",
+									"options": [
+										"Wood",
+										"Brick",
+										"Stone",
+										"Metal"
+									]
+								},
+								"Wall Thickness (cm)": {
+									"html_type": "number",
+									"description": "Thickness of wall"
+								},
+								"Number of Windows in Front": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Number of Windows in Right": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Number of Windows in Left": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Number of Windows in Back": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Window Width (cm)": {
+									"html_type": "number",
+									"description": "Dimmensions of Window"
+								},
+								"Window Depth (cm)": {
+									"html_type": "number",
+									"description": "Dimmensions of Window"
+								},
+								"Window Height (cm)": {
+									"html_type": "number",
+									"description": "Dimmensions of Window"
+								}
+							},
+							"Doors Information": {
+								"Interior Door on Front": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Is there an internal door on the Front side of the Tower"
+								},
+								"Interior Door on Right": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Is there an internal door on the Right side of the Tower"
+								},
+								"Interior Door on Left": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Is there an internal door on the Left side of the Tower"
+								},
+								"Interior Door on Back": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Is there an internal door on the Back side of the Tower"
+								},
+								"Door Length (cm)": {
+									"html_type": "number"
+								},
+								"Door Width (cm)": {
+									"html_type": "number"
+								},
+								"Door Height (cm)": {
+									"html_type": "number"
+								},
+								"Notes": {
+									"html_type": "text",
+									"description": "Any additional information"
+								}
+							},
+							"Wall Restorations": {
+								"Visible Restorations from Front": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Presence of visible restorations such as different colored bricks."
+								},
+								"Visible Restorations from Right": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Presence of visible restorations such as different colored bricks."
+								},
+								"Visible Restorations from Left": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Presence of visible restorations such as different colored bricks."
+								},
+								"Visible Restorations from Back": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Presence of visible restorations such as different colored bricks."
+								}
+							},
+							"Wall Defects": {
+								"Number of Cracks / Holes in Front wall": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Length of Longest Crack in Front wall": {
+									"html_type": "number"
+								},
+								"Number of Cracks / Holes in Right wall": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Length of Longest Crack in Right wall": {
+									"html_type": "number"
+								},
+								"Number of Cracks / Holes in Left wall": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Length of Longest Crack in Left wall": {
+									"html_type": "number"
+								},
+								"Number of Cracks / Holes in Back wall": {
+									"html_type": "number",
+									"step": "1"
+								},
+								"Length of Longest Crack in Back wall": {
+									"html_type": "number"
+								},
+								"Number of Damaged Stone Front": {
+									"html_type": "number"
+								},
+								"Number of Damaged Stone Right": {
+									"html_type": "number"
+								},
+								"Number of Damaged Stone Left": {
+									"html_type": "number"
+								},
+								"Number of Damaged Stone Back": {
+									"html_type": "number"
+								},
+								"Number of Misaligned Bricks Front": {
+									"html_type": "number"
+								},
+								"Number of Misaligned Bricks Right": {
+									"html_type": "number"
+								},
+								"Number of Misaligned Bricks Left": {
+									"html_type": "number"
+								},
+								"Number of Misaligned Bricks Back": {
+									"html_type": "number"
+								},
+								"Number of Tie Bands from Front": {
+									"html_type": "number",
+									"step": "1",
+									"description": "Number of Metal fastenings holding the wall together"
+								},
+								"Number of Tie Bands from Right": {
+									"html_type": "number",
+									"step": "1",
+									"description": "Number of Metal fastenings holding the wall together"
+								},
+								"Number of Tie Bands from Left": {
+									"html_type": "number",
+									"step": "1",
+									"description": "Number of Metal fastenings holding the wall together"
+								},
+								"Number of Tie Bands from Back": {
+									"html_type": "number",
+									"step": "1",
+									"description": "Number of Metal fastenings holding the wall together"
+								}
+							}
+						}
+					],
+					"Belfry": {
+						"Landing Info": {
+							"Landing Material": {
+								"html_type": "select",
+								"options": [
+									"Wood",
+									"Brick",
+									"Stone",
+									"Metal"
+								]
+							},
+							"Landing Sturdiness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for sturdiness of landing - 0 (solid) 4 (dangerous)"
+							},
+							"Landing Cleanliness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for cleanliness of landing - 0 (clean) 4 (dirty)"
+							},
+							"Belfry Length (cm)": {
+								"html_type": "number",
+								"description": "Distance Front to Back"
+							},
+							"Belfry Width (cm)": {
+								"html_type": "number",
+								"description": "Distance Right to Left"
+							},
+							"Belfry Height (cm)": {
+								"html_type": "number"
+							},
+							"Natural Light": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for amount of natural light of landing - 0 (lots of light) 4 (no light)"
+							},
+							"Artificial Light": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for amount of artificial light of landing - 0 (lots of light) 4 (no light)"
+							},
+							"Notes": {
+								"html_type": "text",
+								"description": "Any additional information"
+							}
+						},
+						"Stairs Info": {
+							"Presence of Ramp": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								]
+							},
+							"Presence of Stairs": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								]
+							},
+							"Staircase Side": {
+								"html_type": "select",
+								"options": [
+									"Front",
+									"Right",
+									"Left",
+									"Back"
+								]
+							},
+							"Stair Height": {
+								"html_type": "number"
+							},
+							"Staircase Material": {
+								"html_type": "select",
+								"options": [
+									"Wood",
+									"Brick",
+									"Stone",
+									"Metal"
+								]
+							},
+							"Number of Steps to Next Landing": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Bad Steps": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of steps that are damaged or dangerous"
+							},
+							"Staircase Cleanliness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for cleanliness of staircase - 0 (clean) 4 (dirty)"
+							},
+							"Staircase Sturdiness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for sturdiness of staircase - 0 (sturdy) 4 (dangerous)"
+							},
+							"Railing Sturdiness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating for sturdiness of railings - 0 (sturdy) 4 (dangerous)"
+							},
+							"Notes": {
+								"html_type": "text",
+								"description": "Any additional information"
+							}
+						},
+						"Wall and Window Information": {
+							"Block Width (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of block in wall"
+							},
+							"Block Depth (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of block in wall"
+							},
+							"Block Height (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of block in wall"
+							},
+							"Wall Material": {
+								"html_type": "select",
+								"options": [
+									"Wood",
+									"Brick",
+									"Stone",
+									"Metal"
+								]
+							},
+							"Wall Thickness (cm)": {
+								"html_type": "number",
+								"description": "Thickness of wall"
+							},
+							"Number of Windows in Front": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Windows in Right": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Windows in Left": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Number of Windows in Back": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Window Width (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of Window"
+							},
+							"Window Depth (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of Window"
+							},
+							"Window Height (cm)": {
+								"html_type": "number",
+								"description": "Dimmensions of Window"
+							}
+						},
+						"Doors Information": {
+							"Interior Door on Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Front side of the Tower"
+							},
+							"Interior Door on Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Right side of the Tower"
+							},
+							"Interior Door on Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Left side of the Tower"
+							},
+							"Interior Door on Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is there an internal door on the Back side of the Tower"
+							},
+							"Door Length (cm)": {
+								"html_type": "number"
+							},
+							"Door Width (cm)": {
+								"html_type": "number"
+							},
+							"Door Height (cm)": {
+								"html_type": "number"
+							},
+							"Notes": {
+								"html_type": "text",
+								"description": "Any additional information"
+							}
+						},
+						"Wall Restorations": {
+							"Visible Restorations from Front": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Right": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Left": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							},
+							"Visible Restorations from Back": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Presence of visible restorations such as different colored bricks."
+							}
+						},
+						"Wall Defects": {
+							"Number of Cracks / Holes in Front wall": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Length of Longest Crack in Front wall": {
+								"html_type": "number"
+							},
+							"Number of Cracks / Holes in Right wall": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Length of Longest Crack in Right wall": {
+								"html_type": "number"
+							},
+							"Number of Cracks / Holes in Left wall": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Length of Longest Crack in Left wall": {
+								"html_type": "number"
+							},
+							"Number of Cracks / Holes in Back wall": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Length of Longest Crack in Back wall": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Front": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Right": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Left": {
+								"html_type": "number"
+							},
+							"Number of Damaged Stone Back": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Front": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Right": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Left": {
+								"html_type": "number"
+							},
+							"Number of Misaligned Bricks Back": {
+								"html_type": "number"
+							},
+							"Number of Tie Bands from Front": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the wall together"
+							},
+							"Number of Tie Bands from Right": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the wall together"
+							},
+							"Number of Tie Bands from Left": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the wall together"
+							},
+							"Number of Tie Bands from Back": {
+								"html_type": "number",
+								"step": "1",
+								"description": "Number of Metal fastenings holding the wall together"
+							}
+						},
+						"Belfry Specifics": {
+							"Frame Type": {
+								"html_type": "select",
+								"options": [
+									"A Frame",
+									"H Frame"
+								],
+								"description": "Type of frame supporting the bells"
+							},
+							"Frame Restoration": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Visible Restorations to the original frame."
+							},
+							"Frame Material": {
+								"html_type": "select",
+								"options": [
+									"Wood",
+									"Brick",
+									"Stone",
+									"Metal"
+								]
+							},
+							"Frame Missing Screw Bolts": {
+								"html_type": "select",
+								"options": [
+									"Yes",
+									"No"
+								],
+								"description": "Is the frame missing screws?"
+							},
+							"Frame Rust": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating of Rustiness - 0 (no rust) 4 (very rusty)"
+							},
+							"Frame Cracks": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating of Cracks in Frame - 0 (no cracks) 4 (countless cracks)"
+							},
+							"Frame Cleanliness": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating of Cleanliness of Frame - 0 (very clean) 4 (very dirty)"
+							},
+							"Frame Warping": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating of Warping of Frame - 0 (no warping) 4 (very warped)"
+							},
+							"Frame Dents": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Rating of Dents in Frame - 0 (no dents) 4 (very dented)"
+							},
+							"Frame Overall Condition": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Overall Rating of Condition of Frame - 0 (prestine) 4 (very poor)"
+							},
+							"Belfry Opening Side": {
+								"html_type": "select",
+								"options": [
+									"Front",
+									"Right",
+									"Left",
+									"Back"
+								]
+							},
+							"Condition Inside Roof": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4",
+									"NA"
+								]
+							},
+							"Bird Net Condition": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Condition of bird netting - 0 (perfect) 4 (nonexistant)"
+							},
+							"Drain Hole Condition": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4"
+								],
+								"description": "Condition of drain holes - 0 (perfect) 4 (nonexistant)"
+							},
+							"Closest Bell Tower": {
+								"html_type": "text"
+							},
+							"Notes": {
+								"html_type": "text",
+								"description": "Any additional information"
+							}
+						},
+						"Internal Decorations and Inscriptions": {
+							"Number of Internal Inscriptions": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Internal Inscription Translations": {
+								"html_type": "text"
+							},
+							"Number of Internal Decorations": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Internal Decoration Locations": {
+								"html_type": "text"
+							},
+							"Internal Decoration Descriptions": {
+								"html_type": "text"
+							},
+							"Internal Decoration and Inscription Legibility": {
+								"html_type": "select",
+								"options": [
+									"0",
+									"1",
+									"2",
+									"3",
+									"4",
+									"NA"
+								],
+								"description": "Overall Rating of Legibility of Decorations and Inscriptions - 0 (prestine) 4 (very poor)"
+							}
+						}
+					},
+					"Bells": [
+						{
+							"Bell Number": {
+								"html_type": "number",
+								"step": "1"
+							},
+							"Note and Ringing Times": {
+								"Musical Note": {
+									"html_type": "select",
+									"options": [
+										"A",
+										"B",
+										"C",
+										"D",
+										"E",
+										"F",
+										"G"
+									],
+									"description": "Note that the bell plays"
+								},
+								"Frequency of Note (Hz)": {
+									"html_type": "number",
+									"description": "Frequency of Bell Ringing in Hz"
+								},
+								"Monday Ringing Times": {
+									"html_type": "text"
+								},
+								"Tuesday Ringing Times": {
+									"html_type": "text"
+								},
+								"Wednesday Ringing Times": {
+									"html_type": "text"
+								},
+								"Thursday Ringing Times": {
+									"html_type": "text"
+								},
+								"Friday Ringing Times": {
+									"html_type": "text"
+								},
+								"Saturday Ringing Times": {
+									"html_type": "text"
+								},
+								"Sunday Ringing Times": {
+									"html_type": "text"
+								}
+							},
+							"Engravings": {
+								"Crown Engravings on Front": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Front of the Bell"
+								},
+								"Crown Engravings on Right": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Right of the Bell"
+								},
+								"Crown Engravings on Left": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Left of the Bell"
+								},
+								"Crown Engravings on Back": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Back of the Bell"
+								},
+								"Body Engravings on Front": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Front of the Bell"
+								},
+								"Body Engravings on Right": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Right of the Bell"
+								},
+								"Body Engravings on Left": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Left of the Bell"
+								},
+								"Body Engravings on Back": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Back of the Bell"
+								},
+								"Lip Engravings on Front": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Front of the Bell"
+								},
+								"Lip Engravings on Right": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Right of the Bell"
+								},
+								"Lip Engravings on Left": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Left of the Bell"
+								},
+								"Lip Engravings on Back": {
+									"html_type": "text",
+									"description": "Description of Engravings on the Back of the Bell"
+								},
+								"Number of Engravings": {
+									"html_type": "number",
+									"step": "1"
+								}
+							},
+							"Inscriptions": {
+								"Crown Inscriptions on Front": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Front of the Bell"
+								},
+								"Crown Inscriptions on Right": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Right of the Bell"
+								},
+								"Crown Inscriptions on Left": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Left of the Bell"
+								},
+								"Crown Inscriptions on Back": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Back of the Bell"
+								},
+								"Body Inscriptions on Front": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Front of the Bell"
+								},
+								"Body Inscriptions on Right": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Right of the Bell"
+								},
+								"Body Inscriptions on Left": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Left of the Bell"
+								},
+								"Body Inscriptions on Back": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Back of the Bell"
+								},
+								"Lip Inscriptions on Front": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Front of the Bell"
+								},
+								"Lip Inscriptions on Right": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Right of the Bell"
+								},
+								"Lip Inscriptions on Left": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Left of the Bell"
+								},
+								"Lip Inscriptions on Back": {
+									"html_type": "text",
+									"description": "Description of Inscriptions on the Back of the Bell"
+								},
+								"Number of Inscriptions": {
+									"html_type": "number",
+									"step": "1"
+								}
+							},
+							"Clapper and Stock": {
+								"Presence of Clapper": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									]
+								},
+								"Clapper Rust": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for rustiness of clapper - 0 (prestine) 4 (rusty)."
+								},
+								"Clapper Condition": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for condition of clapper - 0 (prestine) 4 (terrible)."
+								},
+								"Clapper Length (cm)": {
+									"html_type": "number"
+								},
+								"Belt Material": {
+									"html_type": "text",
+									"description": "Material of belt holding clapper to bell (usually leather)."
+								},
+								"Stock Material": {
+									"html_type": "text",
+									"description": "Material of stock holding bell to frame (usually wood)."
+								},
+								"Skidmark Side (1)": {
+									"html_type": "select",
+									"options": [
+										"Front",
+										"Right",
+										"Left",
+										"Back"
+									],
+									"description": "Side of the first skidmark inside bell."
+								},
+								"Length of Skidmark (1) (cm)": {
+									"html_type": "number"
+								},
+								"Skidmark Side (2)": {
+									"html_type": "select",
+									"options": [
+										"Front",
+										"Right",
+										"Left",
+										"Back"
+									],
+									"description": "Side of the second skidmark inside bell."
+								},
+								"Length of Skidmark (2) (cm)": {
+									"html_type": "number"
+								},
+								"Safety Cable": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Presence of safety cable holding the clapper up in case the belt breaks."
+								},
+								"Conservation State": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for Conservation State of Clapper and Stock - 0 (well preserved) 4 (poorly preserved)."
+								}
+							},
+							"Ringing Method": {
+								"Ringing Method": {
+									"html_type": "select",
+									"options": [
+										"Wheel",
+										"Hammer",
+										"Wheel and Hammer",
+										"None"
+									],
+									"description": "How the bell is rung"
+								},
+								"Swing Direction": {
+									"html_type": "select",
+									"options": [
+										"Front-Back",
+										"Right-Left"
+									],
+									"description": "While the bell is ringing, what direction is it swinging? (Should align with skidmark information.)"
+								},
+								"Hammer Side": {
+									"html_type": "select",
+									"options": [
+										"Front",
+										"Right",
+										"Left",
+										"Back",
+										"NA"
+									]
+								},
+								"Reason Not Rung": {
+									"html_type": "text"
+								},
+								"Automatic Ringing": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Are the bells rung automatically?"
+								},
+								"Manual Ringing": {
+									"html_type": "select",
+									"options": [
+										"Yes",
+										"No"
+									],
+									"description": "Are the bells rung manually?"
+								}
+							},
+							"Physical Properties": {
+								"Thickness of Bell (cm)": {
+									"html_type": "number",
+									"description": "Thickness of bell at maximum thickness"
+								},
+								"Diameter of Bell (cm)": {
+									"html_type": "number"
+								},
+								"Internal Height of Bell (cm)": {
+									"html_type": "number"
+								},
+								"Height off Ground of Bell (cm)": {
+									"html_type": "number"
+								},
+								"Cracked Side": {
+									"html_type": "select",
+									"options": [
+										"Front",
+										"Right",
+										"Left",
+										"Back",
+										"NA"
+									]
+								},
+								"Cleanliness Rating": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for Cleanliness of Bell - 0 (clean) 4 (dirty)."
+								},
+								"Discoloration Rating": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for Discoloration of Bell - 0 (original color) 4 (very discolored)."
+								},
+								"Chips Rating": {
+									"html_type": "number",
+									"step": "1",
+									"description": "number of chips visible on bell lip (best method is to look at lip from inside bell)."
+								},
+								"Decoration Legibility": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for Legibility of Decorations on Bell - 0 (legible) 4 (not legible)."
+								},
+								"Overall Condition": {
+									"html_type": "select",
+									"options": [
+										"0",
+										"1",
+										"2",
+										"3",
+										"4"
+									],
+									"description": "Rating for Overall Condition of Bell - 0 (prestine condition) 4 (poor condition)."
+								}
+							},
+							"Historical Information": {
+								"First Casting": {
+									"html_type": "date"
+								},
+								"Second Casting": {
+									"html_type": "date"
+								},
+								"Historic Information": {
+									"html_type": "text"
+								},
+								"Foundry": {
+									"html_type": "text"
+								},
+								"Place of Casting": {
+									"html_type": "text"
+								}
+							}
+						}
+					]
+				}
+			},
+			"Media": {
+				"Basic Images": {
+					"Main Image": {
+						"Image Name": {
+							"html_type": "text"
+						},
+						"Image": {
+							"html_type": "image"
+						},
+						"Image Description": {
+							"html_type": "text",
+							"description": "Description that can be displayed on the main tower page."
+						}
+					},
+					"Panorama" : {
+						"Image Name": {
+							"html_type": "text"
+						},
+						"Image": {
+							"html_type": "image"
+						},
+						"Image Description": {
+							"html_type": "text",
+							"description": "Image that will be used at the top of the bell tower page."
+						}
+					}
+				},
+				"Images": {
+					"Exterior": [
+						{
+							"Image Name": {
+								"html_type": "text"
+							},
+							"Image": {
+								"html_type": "image"
+							},
+							"Image Description": {
+								"html_type": "text",
+								"description": "Include Side if applicable."
+							}
+						}
+					],
+					"Interior": {
+						"Base": [
+							{
+								"Image Name": {
+									"html_type": "text"
+								},
+								"Image": {
+									"html_type": "image"
+								},
+								"Image Description": {
+									"html_type": "text",
+									"description": "Include Side if applicable."
+								}
+							}
+						],
+						"Shaft": [
+							{
+								"Image Name": {
+									"html_type": "text"
+								},
+								"Image": {
+									"html_type": "image"
+								},
+								"Image Description": {
+									"html_type": "text",
+									"description": "Include Side if applicable."
+								}
+							}
+						],
+						"Belfry": [
+							{
+								"Image Name": {
+									"html_type": "text"
+								},
+								"Image": {
+									"html_type": "image"
+								},
+								"Image Description": {
+									"html_type": "text",
+									"description": "Include Side if applicable."
+								}
+							}
+						],
+						"Bells": [
+							{
+								"Image Name": {
+									"html_type": "text"
+								},
+								"Image": {
+									"html_type": "image"
+								},
+								"Image Description": {
+									"html_type": "text",
+									"description": "Include Side if applicable."
+								}
+							}
+						]
+					},
+					"360 Views": [
+						{
+							"Image Name": {
+								"html_type": "text"
+							},
+							"Image": {
+								"html_type": "image"
+							},
+							"Image Description": {
+								"html_type": "text",
+								"description": "Include Side if applicable."
+							}
+						}
+					]
+				},
+				"Bells Audio": [
+					{
+						"Bell Number": {
+							"html_type": "number",
+							"step": "1"
+						},
+						"Bells Audio": {
+							"html_type": "audio",
+							"description": "Add audio for a bell."
+						},
+						"Bells Description": {
+							"html_type": "text",
+							"description": "Add description for bell audio."
+						}
+					}
+				],
+				"Matterport": {
+					"Matterport Link": {
+						"html_type": "text"
+					}
+				},
+				"Walking Tour": {
+					"Tour Link": {
+						"html_type": "text"
+						"description": "Add url for walking tour from youtube."
+					}
+				},
+				"Theta Views": [
+					{
+						"Theta Link": {
+							"html_type": "text"
+						}
+					}
+				],
+				"Panellum Tours": {
+					"First Scene": {
+						"Scene ID": {
+							"html_type": "text",
+							"description": "label given to scene that is used to connect scenes."
+						},
+						"Scene Title": {
+							"html_type": "text",
+							"description": "Text describing what the scene is, displayed on the tour in bottom left."
+						},
+						"Image": {
+							"html_type": "image",
+							"description": "360 view - (equirectangular image), that is the scene. "
+						},
+						"Hotspots": [
+							{
+								"pitch": {
+									"html_type": "number",
+									"step": "1",
+									"description": "Initial vertical view. (90 is straight up, -90 is straight down)."
+								},
+								"yaw": {
+									"html_type": "number",
+									"step": "1",
+									"description": "Initial horizontal view. (90 is right, -90 is left)."
+								},
+								"type": {
+									"html_type": "select",
+									"options": [
+										"scene",
+										"info"
+									],
+									"description": "What the hotspot is referencing."
+								},
+								"label": {
+									"html_type": "text",
+									"description": "The text that appears when you over over the hotspot."
+								},
+								"Linked ID": {
+									"html_type": "text",
+									"description": "For scenes, add the id of the scene the hotspot goes to. For info, add the url to go to."
+								}
+							}
+						]
+					},
+					"Connected Scenes": [
+						{
+							"Scene ID": {
+								"html_type": "text",
+								"description": "label given to scene that is used to connect scenes."
+							},
+							"Scene Title": {
+								"html_type": "text",
+								"description": "Text describing what the scene is, displayed on the tour in bottom left."
+							},
+							"Image": {
+								"html_type": "image",
+								"description": "360 view - (equirectangular image), that is the scene. "
+							},
+							"Hotspots": [
+								{
+									"pitch": {
+										"html_type": "number",
+										"step": "1",
+										"description": "Initial vertical view. (90 is straight up, -90 is straight down)."
+									},
+									"yaw": {
+										"html_type": "number",
+										"step": "1",
+										"description": "Initial horizontal view. (90 is right, -90 is left)."
+									},
+									"type": {
+										"html_type": "select",
+										"options": [
+											"scene",
+											"info"
+										],
+										"description": "What the hotspot is referencing."
+									},
+									"label": {
+										"html_type": "text",
+										"description": "The text that appears when you over over the hotspot."
+									},
+									"Linked ID": {
+										"html_type": "text",
+										"description": "For scenes, add the id of the scene the hotspot goes to. For info, add the url to go to."
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	}
+}
